@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PetGram - Gérez le profil de votre animal">
+  <title>PetGram 🐾 — Profil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><h1> PetGram 🐾</h1></div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="swipe.html">Swipe</a></li>
+          <li><a href="matches.html">Matches</a></li>
+          <li><a href="chat.html">Chat</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <a href="login.html">Connexion</a>
+      <a href="signup.html">S'inscrire</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Mon Profil 🐾</h2>
+
+    <div class="profil-layout">
+      <div class="profil-card">
+        <img  src="">
+        <h3> Buddy 🐶</h3>
+        <p>Labrador · 5 ans · Mâle</p>
+        <p>📍 Ariana, Tunisie</p>
+        <br>
+        <span class="profil-badge">Joueur</span>
+        <span class="profil-badge">Sociable</span>
+        <span class="profil-badge">Vacciné ✅</span>
+        <br><br>
+        <p>
+          "Adore courir dans les parcs et rencontrer de nouveaux amis !"
+        </p>
+        <br>
+          <span>🎉 4 matches </span>
+          <span>💬 3 conversations</span>
+      </div>
+
+      <div class="profil-edit-form">
+        <h3>✏️ Modifier le profil</h3>
+
+        <form id="profilForm">
+          <fieldset>
+            <legend>👤 Informations du propriétaire</legend>
+
+            <div class="form-group">
+              <label for="prenomProprietaire">Prénom</label>
+              <input type="text" id="prenomProprietaire" name="prenom" value="Ahmed" required="">
+            </div>
+            <div class="form-group">
+              <label for="nomProprietaire">Nom</label>
+              <input type="text" id="nomProprietaire" name="nom" value="Ben Ghorbel" required="">
+            </div>
+            <div class="form-group">
+              <label for="emailProprietaire">📧 Email</label>
+              <input type="email" id="emailProprietaire" name="email" value="ahmed@email.com" required="">
+            </div>
+            <div class="form-group">
+              <label for="villeProprietaire">📍 Ville</label>
+              <input type="text" id="villeProprietaire" name="ville" value="Ariana">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>🐾 Informations de l'animal</legend>
+
+            <div class="form-group">
+              <label>📸 Photo de l'animal</label>
+              
+
+              
+                <p>Cliquez ou glissez une photo ici</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="nomAnimalProfil">Nom de l'animal</label>
+              <input type="text" id="nomAnimalProfil" name="nomAnimal" value="Buddy" required="">
+            </div>
+            <div class="form-group">
+              <label for="especeProfil">🐾 Espèce</label>
+              <select id="especeProfil" name="espece">
+                <option value="chien" selected="">🐶 Chien</option>
+                <option value="chat">🐱 Chat</option>
+                <option value="lapin">🐰 Lapin</option>
+                <option value="oiseau">🐦 Oiseau</option>
+                <option value="poisson">🐟 Poisson</option>
+                <option value="reptile">🦎 Reptile</option>
+                <option value="autre">🐾 Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="raceProfil">Race</label>
+              <input type="text" id="raceProfil" name="race" value="Labrador">
+            </div>
+            <div class="form-group">
+              <label for="ageProfil">Âge (en années)</label>
+              <input type="number" id="ageProfil" name="age" value="5" min="0" max="30">
+            </div>
+            <div class="form-group">
+              <label>Sexe de l'animal</label>
+              <div class="radio-group">
+                <label><input type="radio" name="sexe" value="male" checked=""> Mâle ♂️</label>
+                <label><input type="radio" name="sexe" value="femelle"> Femelle ♀️</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bioProfil">📝 Bio</label>
+              <textarea id="bioProfil" name="bio" placeholder="Décrivez la personnalité de votre animal...">Doux et sociable . Adore courir dans les parcs et rencontrer de nouveaux amis !</textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>🔍 Préférences de recherche</legend>
+            <div class="form-group">
+              <label>Je cherche à rencontrer :</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="prefs" value="chiens" checked=""> 🐶 Des chiens</label>
+                <label><input type="checkbox" name="prefs" value="chats"> 🐱 Des chats</label>
+                <label><input type="checkbox" name="prefs" value="autres"> 🐾 D'autres animaux</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="distanceMax">📍 Distance max (km)</label>
+              <input type="range" id="distanceMax" name="distance" min="5" max="100" value="30">
+              <span><b>30 km </b></span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="form-submit">💾 Sauvegarder les modifications</button>
+        </form>
+      </div>
+  
+  </section>
+  
+  <footer>
+    <div>Adoptez, aimez, protégez — PetGram 🐾</div>
+    <div>
+      <a href="conseil.html">Conseils</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="contact.html">Nous Contacter</a>
+    </div>
+    <div>© 2025 PetGram — Tous droits réservés</div>
+  </footer> 
+</body>
+</html>
