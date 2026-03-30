@@ -111,6 +111,21 @@ header nav ul li a.active {
 }
 .btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); color: #fff; }
 
+.notif-badge {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: .7rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .3rem;
+  vertical-align: middle;
+}
+
 footer {
   margin-top: auto;
   background: var(--text);
