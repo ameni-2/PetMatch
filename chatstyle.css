@@ -48,6 +48,27 @@
 #chat-input button:hover {
     background: var(--primary-dark);
 }
+#chat-header {
+    display: flex;         
+    align-items: center;   
+    padding: 2rem;       
+    border-bottom: 1px solid var(--border); 
+}
+
+#chat-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#chat-header h3 {
+    font-size: 1.2rem;     
+    font-weight: 700;
+    color: var(--text);
+    margin: 5px 0 0 1rem;             
+}
+    
 .recu {
     align-self: flex-start;
     background: var(--border);
