@@ -138,13 +138,25 @@ section {
 }
 
 section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: var(--text);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 1rem;
 }
 
-
+section p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+section img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
 
 /* Footer Styles */
 
